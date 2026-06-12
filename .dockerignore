@@ -1,0 +1,9 @@
+ldenv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.git
+.coverage
+.env
+celerybeat-schedule
