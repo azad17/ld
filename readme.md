@@ -16,3 +16,10 @@ for celery
 for testing
 
 coverage run manage.py test
+
+
+Docker
+
+docker compose build
+
+docker compose up 
