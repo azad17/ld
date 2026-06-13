@@ -60,4 +60,4 @@ class UserProfile(APIView):
         serializer = UserProfileSerializer(request.user,data=request.data,partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response({"message":f"Updated user data for{request.user}","data":serializer.data})
+        return Response({"message":f"Updated user for{request.user}","data":serializer.data})
