@@ -17,7 +17,7 @@ class HomeView(View):
         reset_queries()
         # for career in Career.objects.select_related('user'):
         #     print(career.user.email)
-        #     print(len(connection.queries))
+            print(len(connection.queries))
         for car in Career.objects.select_related('user','club'):
                 print(car.user.email)
                 print(car.club.name)
